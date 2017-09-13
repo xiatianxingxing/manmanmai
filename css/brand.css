@@ -1,0 +1,115 @@
+html {
+  font-size: 32px;
+}
+/*header+++++++++++++++++++++++++*/
+.header {
+  width: 100%;
+  height: 1.5625rem;
+  background-color: #ff841d;
+  padding: 12px;
+}
+.header .logo img {
+  width: 5.78125rem;
+  height: 0.78125rem;
+}
+.header .add img {
+  width: 1.0625rem;
+  height: 1.0625rem;
+}
+/*search+++++++++++++++++++++++++++++*/
+.search {
+  width: 100%;
+  height: 1.5625rem;
+  padding: 10px;
+  position: relative;
+  border-bottom: 1px solid #3c3c3c;
+}
+.search .sec1 {
+  width: 90%;
+  height: 0.9375rem;
+  border: 0;
+  background-color: #f1f1f1;
+  border-radius: 20px;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 16px;
+  padding-left: 5%;
+  color: #ccc;
+  padding-right: 1.96875rem;
+}
+.search .sec2 {
+  width: 1.96875rem;
+  height: 0.9375rem;
+  color: #fff;
+  background-color: #ff841d;
+  border-radius: 20px;
+  border: 0;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.call {
+  width: 100%;
+  height: 1rem;
+  padding-left: 0.625rem;
+  line-height: 1rem;
+  font-size: 0.4375rem;
+  background-color: #f2f2f2;
+}
+/*r+++++++++++++++����Ʒ��brand����sort++++++++++++++*/
+.brand {
+  background-color: #f2f2f2;
+  padding: 0.3125rem;
+}
+.brand .sort {
+  width: 100%;
+  height: 1.3125rem;
+  border: 1px solid #9c9c9c;
+  color: #ff9c43;
+  padding-left: 0.3125rem;
+  line-height: 1.3125rem;
+  font-size: 0.5rem;
+}
+.brand .product ul li a {
+  width: 100%;
+  height: 1.28125rem;
+  display: block;
+  padding: 0.25rem;
+  font-size: 0.5rem;
+  font-weight: 700;
+  border-bottom: 1px solid #9c9c9c;
+}
+.brand .product ul li a i {
+  float: right;
+  font: 16/32rem Consolas;
+}
+/*footer+++++++++++++++++++++++++++*/
+.footer {
+  background-color: #f2f2f2;
+  text-align: center;
+}
+.footer a {
+  margin: 10px 0;
+}
+.footer .bottom a {
+  overflow: hidden;
+  float: left;
+  display: block;
+  box-sizing: border-box;
+  border: 1px solid #c4c4c4;
+  text-align: center;
+  line-height: 1.0625rem;
+  border-left: 0;
+  font-size: 0.4375rem;
+  height: 1.0625rem;
+  width: 30%;
+}
+.footer .bottom a:nth-of-type(3) {
+  width: 40%;
+  border-right: 0;
+}
+.footer .bottom a img {
+  width: 0.46875rem;
+  height: 0.46875rem;
+  margin-top: -2px;
+}

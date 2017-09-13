@@ -1,0 +1,186 @@
+html{
+  font-size: 32px;
+}
+@color:#ff841d;;
+@colorbgc:#f2f2f2;
+/*header+++++++++++++++++++++++++*/
+.header{
+  width: 100%;
+  height: 50/32rem;
+  background-color: @color;
+  padding:12px;
+  .logo{
+    img{
+      width: 185/32rem;
+      height: 25/32rem;
+    }
+  }
+  .add{
+    img{
+      width: 34/32rem;
+      height: 34/32rem;
+    }
+  }
+}
+/*search+++++++++++++++++++++++++++++*/
+.search{
+  width: 100%;
+  height: 50/32rem;
+  padding: 10px;
+  position: relative;
+  border-bottom: 1px solid #3c3c3c;
+  .sec1{
+    width: 90%;
+    height: 30/32rem;
+    border: 0;
+    background-color:#f1f1f1;
+    border-radius: 20px;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 16px;
+    padding-left: 5%;
+    color: #ccc;
+    padding-right:63/32rem;
+  }
+  .sec2{
+    width:63/32rem;
+    height: 30/32rem;
+    color: #fff;
+    background-color:@color;
+    border-radius: 20px;
+    border: 0;
+    position: absolute;
+    top:10px;
+    right: 10px;
+  }
+}
+/*筛选+++++++++++++++++++++++++++++++*/
+.select{
+  background-color: #F5F5F5;
+  padding: 10/32rem;
+  a{
+    float: left;
+    color: #000;
+    font-size: 14/32rem;
+    margin-right: 10/32rem;
+  }
+  input{
+    width: 55/32rem;
+    height: 45/32/rem;
+    font-size: 14/32rem;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+  }
+}
+/*产品介绍++++++++++++++++++++++++++++*/
+.recommend {
+  .title {
+    width: 90%;
+    margin: 10/32rem auto;
+    text-align: center;
+    font-size: 18/32rem;
+  }
+  img{
+    display: block;
+    width: 170/32rem;
+    height: 170/32rem;
+    margin: 10/32rem auto;
+    background-color: #0fff19;
+  }
+  .price{
+    a{
+      width: 33.3%;
+      height: 30/32rem;
+      display: inline-block;
+      border: 1px solid #ffe5f1;
+      border-left: 0;
+      background-color: #ffd056;
+      text-align: center;
+      font-size: 14/32rem;
+      line-height:  30/32rem;
+      box-sizing: border-box;
+    }
+  }
+  p{
+    font-size: 14/32rem;
+    padding:  0 10/32rem;
+  }
+  .tab{
+    width: 100%;
+    table{
+      img{
+        width: 16/32rem;
+        height: 16/32rem;
+      }
+    }
+  }
+}
+/*网友评论*/
+.comment{
+  .wypl{
+    width: 100%;
+    height: 34/32rem;
+    background-color: #abee84;
+    font-size: 16/32rem;
+    text-align: center;
+    line-height:  34/32rem;
+    border-top: 2px solid #cdff23;
+  }
+  .comment_in{
+    padding: 0 10/32rem;
+    .from{
+      text-align: right;
+    }
+    hr{
+      margin: 20/32rem  0;
+    }
+  }
+  .gengduo{
+
+    a{
+      width: 300/32rem;
+      height: 32/32rem;
+      border: 1px solid #5e5e5e;
+      text-align: center;
+      line-height:  32/32rem;
+      border-radius: 10px;
+      display: block;
+      margin: 30/32rem auto;
+
+    }
+  }
+}
+/*底部++++++++++++++++++++++++++++++++++++*/
+.footer{
+  background-color: #f2f2f2;
+  text-align: center;
+  height: 196/32rem;
+  a{
+    margin: 10px 0;
+  }
+  .bottom{
+    a{
+      overflow: hidden;
+      float: left;
+      display: block;
+      box-sizing: border-box;
+      border: 1px solid #c4c4c4;
+      text-align: center;
+      line-height: 34/32rem;;
+      border-left: 0;
+      font-size: 14/32rem;
+      height: 34/32rem;
+      width: 30%;
+      &:nth-of-type(3){
+        width: 40%;
+        border-right: 0;
+      }
+
+      img{
+        width: 15/32rem;
+        height: 15/32rem;
+        margin-top: -2px;
+      }
+    }
+  }
+}

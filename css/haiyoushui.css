@@ -1,0 +1,223 @@
+html {
+  font-size: 32px;
+}
+/*header+++++++++++++++++++++++++*/
+.header {
+  width: 100%;
+  height: 1.5625rem;
+  background-color: #ff841d;
+  padding: 12px;
+}
+.header .logo img {
+  width: 5.78125rem;
+  height: 0.78125rem;
+}
+.header .add img {
+  width: 1.0625rem;
+  height: 1.0625rem;
+}
+/*search+++++++++++++++++++++++++++++*/
+.search {
+  width: 100%;
+  height: 1.5625rem;
+  padding: 10px;
+  position: relative;
+  border-bottom: 1px solid #3c3c3c;
+}
+.search .sec1 {
+  width: 90%;
+  height: 0.9375rem;
+  border: 0;
+  background-color: #f1f1f1;
+  border-radius: 20px;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 16px;
+  padding-left: 5%;
+  color: #ccc;
+  padding-right: 1.96875rem;
+}
+.search .sec2 {
+  width: 1.96875rem;
+  height: 0.9375rem;
+  color: #fff;
+  background-color: #ff841d;
+  border-radius: 20px;
+  border: 0;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.call {
+  width: 100%;
+  height: 1rem;
+  padding-left: 0.625rem;
+  line-height: 1rem;
+  font-size: 0.4375rem;
+  background-color: #f2f2f2;
+}
+/*Ʒ��++++++++++++++++++++++++++++++++*/
+.brand {
+  background-color: #f2f2f2;
+}
+.brand h3 {
+  width: 100%;
+  height: 1.125rem;
+  line-height: 1.125rem;
+  padding-left: 0.46875rem;
+  color: #ff841d;
+  border-bottom: 1px solid #b9b9b9;
+}
+.brand .good_uu > li {
+  border: 1px solid #b9b9b9;
+  padding: 0.3125rem;
+}
+.brand .good_uu > li > a {
+  position: relative;
+  overflow: hidden;
+  height: 1.25rem;
+  display: block;
+  padding-left: 1.25rem;
+}
+.brand .good_uu > li > a > span {
+  width: 0.625rem;
+  height: 0.625rem;
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #c9c9c9;
+  text-align: center;
+  color: #fff;
+}
+.brand .good_uu > li > a > h4 {
+  font-size: 0.5rem;
+}
+.brand .good_uu > li > a > p {
+  color: #c9c9c9;
+}
+.brand .good_uu2 > li {
+  border-bottom: 1px solid #e7e7e7;
+  padding: 0.3125rem;
+}
+.brand .good_uu2 > li > a {
+  width: 100%;
+  display: block;
+  height: 3.78125rem;
+  position: relative;
+  padding-left: 3.75rem;
+}
+.brand .good_uu2 > li > a > img {
+  width: 3.125rem;
+  height: 3.125rem;
+  display: block;
+  position: absolute;
+  top: 0.3125rem;
+  left: 0.3125rem;
+}
+.brand .good_uu2 > li > a > h4 {
+  font-size: 0.5625rem;
+  color: #ff841d;
+  margin: 0.3125rem 0;
+}
+.brand .good_uu2 > li > a > h4 > span {
+  color: #ffcc0e;
+}
+.brand .good_uu2 > li > a > p {
+  font-size: 0.4375rem;
+}
+.brand .good_uu3 > li {
+  padding: 0.3125rem;
+  background-color: #fff;
+  margin: 0.15625rem;
+}
+.brand .good_uu3 > li .litop {
+  padding-left: 2.8125rem;
+}
+.brand .good_uu3 > li .litop img {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: block;
+}
+.brand .good_uu3 > li .litop > p {
+  font-size: 0.5rem;
+  color: #eee;
+}
+.brand .good_uu3 > li .libt .lia span {
+  float: left;
+}
+.brand .good_uu3 > li .libt .lia span:nth-of-type(2) {
+  color: #ffcc0e;
+  font-size: 0.5625rem;
+}
+.brand .good_uu3 > li .libt .lia i {
+  float: right;
+}
+/*footer+++++++++++++++++++++++++++*/
+.footer {
+  background-color: #f2f2f2;
+  text-align: center;
+}
+.footer a {
+  margin: 10px 0;
+}
+.footer .bottom a {
+  overflow: hidden;
+  float: left;
+  display: block;
+  box-sizing: border-box;
+  border: 1px solid #c4c4c4;
+  text-align: center;
+  line-height: 1.0625rem;
+  border-left: 0;
+  font-size: 0.4375rem;
+  height: 1.0625rem;
+  width: 30%;
+}
+.footer .bottom a:nth-of-type(3) {
+  width: 40%;
+  border-right: 0;
+}
+.footer .bottom a img {
+  width: 0.46875rem;
+  height: 0.46875rem;
+  margin-top: -2px;
+}
+/*���app*/
+.app {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: #fff;
+  padding: 10px;
+  overflow: hidden;
+}
+.app .x {
+  width: 0.9375rem;
+  height: 0.9375rem;
+  margin: 5px;
+  background: url("../images/icon_bar.png") no-repeat -11.25rem -0.9375rem;
+}
+.app img {
+  width: 1.28125rem;
+  height: 1.28125rem;
+}
+.app .txt {
+  color: #5e5e5e;
+  padding: 0.15625rem;
+}
+.app .txt p {
+  font-size: 0.5625rem;
+}
+.app .txt span {
+  font-size: 0.4375rem;
+}
+.app .btn {
+  width: 2.3125rem;
+  height: 1.03125rem;
+  background-color: #ff7700;
+  box-shadow: inset 0 -2px #ff5500;
+  outline: none;
+  border-radius: 0.46875rem;
+  color: #fff;
+}

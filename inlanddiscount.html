@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <script src="./lib/jquery/jquery.js"></script>
+    <script src="./lib/bootstrap/js/bootstrap.js"></script>
+    <script src="./js/template.js"></script>
+    <link rel="stylesheet" href="./css/bese.css"/>
+    <link rel="stylesheet" href="./css/inland.css"/>
+    <title>国内折扣</title>
+</head>
+<body>
+<!--+++++++++++++++++++++头部+++++++++++++++++++-->
+<div class="header">
+    <a href="#" class="logo fl">
+        <img src="./images/header_logo.png" alt=""/>
+    </a>
+    <a href="#" class="add fr">
+        <img src="./images/header_app.png" alt=""/>
+    </a>
+</div>
+<!--++++++++++++++++产品product++++++++++++++++++++-->
+<div class="productimg clearfix">
+    <script type="text/html" id="temp">
+        {{each result as value}}
+            <div class="producti clearfix">
+                        <a href="productid.html?productId={{value.productId}}">{{#value.productImg}}</a>
+                        <p class="name">{{value.productName}}</p>
+                        <p class="clo">{{value.productPrice}}</p>
+                        <p class="luelue">{{value.productFrom}} |  {{value.productTime}}</p>
+            </div>
+        {{/each}}
+    </script>
+</div>
+<!--++++++++++++++++++++底部++++++++++++++++++++++-->
+<div class="footer">
+
+    <div class="bottom">
+        <a href="#">登录</a>
+        <a href="#">注册</a>
+        <a href="#"><img src="./images/top.jpg" alt=""/>返回顶部</a>
+    </div>
+    <p>
+        <a href="#" style="color: red;">手机APP下载</a>
+        <a href="#">慢慢买手机版</a>
+        ——掌上比价平台
+    </p>
+    <p><a href="#"> m.manmanbuy.com  </a></p>
+</div>
+
+</body>
+<script src="./js/inland.js"></script>
+</html>

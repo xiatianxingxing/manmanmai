@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <script src="./lib/jquery/jquery.js"></script>
+    <script src="./lib/bootstrap/js/bootstrap.js"></script>
+    <script src="./js/template.js"></script>
+    <link rel="stylesheet" href="./css/bese.css"/>
+    <link rel="stylesheet" href="./css/sitenav.css"/>
+    <title>商城导航</title>
+</head>
+<body>
+<!--+++++++++++++++++++++头部+++++++++++++++++++-->
+<div class="header">
+    <a href="index.html" class="logo fl">
+        <
+    </a>
+    <h1>商城导航</h1>
+    <a href="#" class="add fr">
+        <img src="./images/header_app.png" alt=""/>
+    </a>
+</div>
+<!--+++++++++++++++++++++friend+++++++++++++++++-->
+<div class="friend">
+    <div class="friends">
+        <script type="text/html" id="temp">
+            {{each result as value}}
+                <a href="{{value.navHref}}" id="{{value.navId}}">
+                    <img src="{{value.navImg}}" alt=""/>
+                    <span>{{value.navTitle}}</span>
+                </a>
+            {{/each}}
+        </script>
+    </div>
+</div>
+<!--+++++++++++++++++++++xianav+++++++++++++++++++++-->
+<div class="nav">
+    <div><a href="index.html">首页 > </a><a href="#">心好累</a></div>
+</div>
+<!--++++++++++++++++++++底部++++++++++++++++++++++-->
+<div class="footer">
+
+    <div class="bottom">
+        <a href="#">登录</a>
+        <a href="#">注册</a>
+        <a href="#"><img src="./images/top.jpg" alt=""/>返回顶部</a>
+    </div>
+    <p>
+        <a href="#" style="color: red;">手机APP下载</a>
+        <a href="#">慢慢买手机版</a>
+        ——掌上比价平台
+    </p>
+    <p><a href="#"> m.manmanbuy.com  </a></p>
+</div>
+<!--+++++++++++++++++++++回到顶部++++++++++++++++-->
+<div class="m_app">
+    <img src="./images/TB2WepTeb1J.eBjSszcXXbFzVXa_!!379516416.png" alt=""/>
+    <a href="#" class="toTop">
+        <img src="./images/top.jpg" alt=""/>
+    </a>
+</div>
+
+</body>
+<script src="./js/sitenav.js"></script>
+</html>

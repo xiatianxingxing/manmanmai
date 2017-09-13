@@ -1,0 +1,181 @@
+html {
+  font-size: 32px;
+}
+/*header+++++++++++++++++++++++++*/
+.header {
+  width: 100%;
+  height: 1.5625rem;
+  background-color: #ff841d;
+  padding: 12px;
+}
+.header .logo img {
+  width: 5.78125rem;
+  height: 0.78125rem;
+}
+.header .add img {
+  width: 1.0625rem;
+  height: 1.0625rem;
+}
+/*search+++++++++++++++++++++++++++++*/
+.search {
+  width: 100%;
+  height: 1.5625rem;
+  padding: 10px;
+  position: relative;
+  border-bottom: 1px solid #3c3c3c;
+}
+.search .sec1 {
+  width: 90%;
+  height: 0.9375rem;
+  border: 0;
+  background-color: #f1f1f1;
+  border-radius: 20px;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 16px;
+  padding-left: 5%;
+  color: #ccc;
+  padding-right: 1.96875rem;
+}
+.search .sec2 {
+  width: 1.96875rem;
+  height: 0.9375rem;
+  color: #fff;
+  background-color: #ff841d;
+  border-radius: 20px;
+  border: 0;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+/*ɸѡ+++++++++++++++++++++++++++++++*/
+.select {
+  background-color: #F5F5F5;
+  padding: 0.3125rem;
+}
+.select a {
+  float: left;
+  color: #000;
+  font-size: 0.4375rem;
+  margin-right: 0.3125rem;
+}
+.select input {
+  width: 1.71875rem;
+  height: 1.40625 / rem;
+  font-size: 0.4375rem;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+}
+/*��Ʒչʾ++++++++++++++++++++++++*/
+.product .show ul li {
+  margin: 20px 0px;
+  border-bottom: 1px solid #5e5e5e;
+}
+.product .show ul li img {
+  width: 3.4375rem;
+  height: 3.4375rem;
+  float: left;
+  margin-right: 0.3125rem;
+}
+.product .show ul li .li_r {
+  width: 100%;
+  padding-left: 3.4375rem;
+  font-size: 0.4375rem;
+  padding: 5px;
+}
+.product .show ul li .li_r .sp {
+  color: red;
+}
+.product .show ul li .li_r .xiao {
+  font-size: 0.375rem;
+  margin-top: 0.625rem;
+}
+.product .show ul li .li_r .xiao .xiao_l {
+  float: left;
+}
+.product .show ul li .li_r .xiao .xiao_r {
+  float: right;
+  padding-right: 0.3125rem;
+}
+.product .show ul li .li_r .xiao .xiao_r p {
+  float: right;
+}
+.product .show ul li .li_r .xiao .xiao_r .im {
+  margin: 0.09375rem;
+  width: 0.46875rem;
+  height: 0.46875rem;
+}
+/*����ҳ+++++++++++++++++++++++++*/
+.page {
+  width: 100%;
+  padding: 0.625rem;
+  display: flex;
+}
+.page select {
+  flex: 3;
+  height: 1.0625rem;
+  margin: 0 0.15625rem;
+}
+.page input {
+  flex: 1;
+  height: 1.03125rem;
+  background-color: #E2E2E2;
+  outline: none;
+  border: 1px solid #747474;
+  text-align: center;
+  line-height: 1.03125rem;
+  border-radius: 0.3125rem;
+}
+.page input:nth-of-type(1) {
+  float: left;
+}
+.page input:nth-of-type(2) {
+  float: right;
+}
+/*�ײ�++++++++++++++++++++++++++++++++++++*/
+.footer {
+  text-align: center;
+  height: 0.03125rem;
+}
+.footer a {
+  margin: 10px 0;
+}
+.footer .bottom a {
+  overflow: hidden;
+  float: left;
+  display: block;
+  box-sizing: border-box;
+  border: 1px solid #c4c4c4;
+  text-align: center;
+  line-height: 1.0625rem;
+  border-left: 0;
+  font-size: 0.4375rem;
+  height: 1.0625rem;
+  width: 30%;
+}
+.footer .bottom a:nth-of-type(3) {
+  width: 40%;
+  border-right: 0;
+}
+.footer .bottom a img {
+  width: 0.46875rem;
+  height: 0.46875rem;
+  margin-top: -2px;
+}
+/*+++++++++++++++++++�ص�����+++++++++++*/
+.m_app {
+  position: fixed;
+  right: 5px;
+  bottom: 50px;
+  width: 1.875rem;
+}
+.m_app img {
+  height: 2.09375rem;
+}
+.m_app .toTop {
+  padding-left: 13px;
+}
+.m_app .toTop img {
+  width: 0.9375rem;
+  height: 0.9375rem;
+}

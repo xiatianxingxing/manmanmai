@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <script src="./lib/jquery/jquery.js"></script>
+    <script src="./lib/bootstrap/js/bootstrap.js"></script>
+    <script src="./js/template.js"></script>
+    <link rel="stylesheet" href="./css/bese.css"/>
+    <link rel="stylesheet" href="./css/page0.css"/>
+    <title></title>
+</head>
+<body>
+<!--+++++++++++++++++++++头部+++++++++++++++++++-->
+<div class="header">
+    <a href="#" class="logo fl">
+        <img src="./images/header_logo.png" alt=""/>
+    </a>
+    <a href="#" class="add fr">
+        <img src="./images/header_app.png" alt=""/>
+    </a>
+</div>
+<!--+++++++++++++++++++++++搜索栏+++++++++++++++++++++-->
+<div class="search">
+    <input type="text" class="sec1 fl" value="请输入你想要的商品"/>
+    <input type="button" value="搜素" class="sec2 fl"/>
+</div>
+<!--+++++++++++++++++++返回筛选select++++++++++++++++++++++-->
+<div class="select clearfix">
+    <a href="index.html">首页 ></a>
+    <a href="category.html">全部分页 ></a>
+    <input type="button" value="筛选" class="fr">
+</div>
+<!--+++++++++++++++++++产品介绍++++++++++++++++++++-->
+<div class="recommend">
+    <script type="text/html" id="temp">
+        {{each result as value}}
+            <div class="title">{{value.productName}}</div>
+            {{#value.productImg}}
+            <div class="price">
+                <a href="javascript:;">比价购买</a><a href="javascript:;">产品参数</a><a href="javascript:;">评论（999+）</a>
+            </div>
+            <div class="tab">
+                {{#value.bjShop}}
+            </div>
+            <p>
+                * 实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。
+            </p>
+        {{/each}}
+    </script>
+</div>
+<!--+++++++++++++++++++网友评论++++++++++++++++++++++++-->
+<div class="comment">
+    <div class="wypl">网友评论</div>
+    <div class="comment_in">
+    <script type="text/html" id="tepm1">
+        {{each result as val}}
+            <div class="clearfix"><span class="fl">{{val.comName}}</span><span class="fr">{{val.comTime}}</span></div>
+            <div class="from">{{val.comFrom}}</div>
+            <p>{{val.comContent}}</p>
+            <hr />
+        {{/each}}
+    </script>
+    </div>
+    <div class="gengduo">
+        <a href="javascript:;">查看更多的评论</a>
+    </div>
+</div>
+<!--++++++++++++++++++++底部++++++++++++++++++++++-->
+<div class="footer">
+
+    <div class="bottom">
+        <a href="#">登录</a>
+        <a href="#">注册</a>
+        <a href="#"><img src="./images/top.jpg" alt=""/>返回顶部</a>
+    </div>
+    <p>
+        <a href="#" style="color: red;">手机APP下载</a>
+        <a href="#">慢慢买手机版</a>
+        ——掌上比价平台
+    </p>
+    <p><a href="#"> m.manmanbuy.com  </a></p>
+</div>
+
+</body>
+<script src="./js/page0.js"></script>
+</html>

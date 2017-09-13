@@ -1,0 +1,131 @@
+html{
+  font-size: 32px;
+}
+@color:#ff841d;
+
+/*header+++++++++++++++++++++++++*/
+.header{
+  width: 100%;
+  height: 50/32rem;
+  background-color: @color;
+  padding:12px;
+  .logo{
+    img{
+      width: 185/32rem;
+      height: 25/32rem;
+    }
+  }
+  .add{
+    img{
+      width: 34/32rem;
+      height: 34/32rem;
+    }
+  }
+}
+/*search+++++++++++++++++++++++++++++*/
+.search{
+  width: 100%;
+  height: 50/32rem;
+  padding: 10px;
+  position: relative;
+  border-bottom: 1px solid #3c3c3c;
+  .sec1{
+    width: 90%;
+    height: 30/32rem;
+    border: 0;
+    background-color:#f1f1f1;
+    border-radius: 20px;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 16px;
+    padding-left: 5%;
+    color: #ccc;
+    padding-right:63/32rem;
+  }
+  .sec2{
+    width:63/32rem;
+    height: 30/32rem;
+    color: #fff;
+    background-color:@color;
+    border-radius: 20px;
+    border: 0;
+    position: absolute;
+    top:10px;
+    right: 10px;
+  }
+}
+.call{
+  width: 100%;
+  height: 32/32rem;
+  padding-left: 20/32rem;
+  line-height: 32/32rem;
+  font-size: 14/32rem;
+  background-color: #f2f2f2;
+}
+/*r+++++++++++++++热门品牌brand排行sort++++++++++++++*/
+.brand{
+  background-color: #f2f2f2;
+  padding:  10/32rem;
+  .sort{
+    width: 100%;
+    height: 42/32rem;
+    border: 1px solid #9c9c9c;
+    color: #ff9c43;;
+    padding-left: 10/32rem;
+    line-height: 42/32rem;
+    font-size: 16/32rem;
+  }
+  .product{
+    ul{
+      li{
+        a{
+          width: 100%;
+          height: 41/32rem;
+          display: block;
+          padding: 8/32rem;
+          font-size: 16/32rem;
+          font-weight: 700;
+          border-bottom: 1px solid #9c9c9c;
+          i{
+          float: right;
+          font:16/32rem Consolas;
+        }
+        }
+      }
+    }
+  }
+}
+/*footer+++++++++++++++++++++++++++*/
+.footer{
+  background-color: #f2f2f2;
+  text-align: center;
+  a{
+    margin: 10px 0;
+  }
+
+  .bottom{
+    a{
+      overflow: hidden;
+      float: left;
+      display: block;
+      box-sizing: border-box;
+      border: 1px solid #c4c4c4;
+      text-align: center;
+      line-height: 34/32rem;;
+      border-left: 0;
+      font-size: 14/32rem;
+      height: 34/32rem;
+      width: 30%;
+      &:nth-of-type(3){
+        width: 40%;
+        border-right: 0;
+      }
+
+      img{
+        width: 15/32rem;
+        height: 15/32rem;
+        margin-top: -2px;
+      }
+    }
+  }
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <script src="./lib/jquery/jquery.js"></script>
+    <script src="./lib/bootstrap/js/bootstrap.js"></script>
+    <script src="./js/template.js"></script>
+    <link rel="stylesheet" href="./css/bese.css"/>
+    <link rel="stylesheet" href="./css/index.css"/>
+    <title>首页</title>
+</head>
+<body>
+<!--+++++++++++++++++++++头部+++++++++++++++++++-->
+<div class="header">
+    <a href="#" class="logo fl">
+        <img src="./images/header_logo.png" alt=""/>
+    </a>
+    <a href="#" class="add fr">
+        <img src="./images/header_app.png" alt=""/>
+    </a>
+</div>
+<!--+++++++++++++++++++++++搜索栏+++++++++++++++++++++-->
+<div class="search">
+    <input type="text" class="sec1 fl" value="请输入你想要的商品"/>
+    <input type="button" value="搜素" class="sec2 fl"/>
+</div>
+<!--+++++++++++++++++++++++nav++++++++++++++++++++++-->
+<div class="nav clearfix">
+    <ul id="nav_uu">
+        <script type="text/html" id="tmp">
+            {{each result as value}}
+                <li id="{{value.indexmenuId+1}}">
+                    <a href="{{value.titlehref}}">
+                        {{#value["img"]}}
+                        <p>{{value.name}}</p>
+                    </a>
+                </li>
+            {{/each}}
+        </script>
+
+    </ul>
+
+</div>
+<!--+++++++++++++++产品product++++++++++++++++++-->
+<div class="product clearfix">
+    <div class="title clearfix">
+        <h3>超值折扣推荐</h3>
+        <img src="./images/product-arrow.png" alt=""/>
+    </div>
+    <div class="show clearfix">
+        <ul id="product_uu">
+            <script type="text/html" id="temp">
+                {{each result as value}}
+                    <li class="clearfix" id="{{value.productId}}">
+                       {{#value["productImgSm"]}}
+                        <div class="li_r">
+                            <div>{{value.productName}} <span class="sp">{{value.productPinkage}}</span></div>
+                            <div>
+                                <span>{{value.productFrom}}|{{value.productTime}}</span>
+
+                                <span> <img src="./images/comment.svg" alt="" class="im"/><p>{{value.productComCount}}</p></span>
+                            </div>
+                        </div>
+                    </li>
+                {{/each}}
+            </script>
+
+            <!-- -->
+            <!--<li class="clearfix">-->
+                <!--<img src="./images/product-li.gif" alt=""/>-->
+                <!--<div class="li_r">-->
+                    <!--<div>【实时更新】慢慢买7周年福利—晒威望求助攻 <span class="sp">晒图更新啦！</span></div>-->
+                    <!--<div><span>慢慢买 | 07-13 18:20</span><span><img src="./images/comment.svg" alt=""/>233</span></div>-->
+                <!--</div>-->
+            <!--</li>-->
+
+        </ul>
+    </div>
+    <div class="info">
+        <a href="">更多优惠信息》</a>
+    </div>
+</div>
+<!--++++++++++++++++++++底部++++++++++++++++++++++-->
+<div class="footer">
+    <div class="title2">
+        <h3>品牌排行</h3>
+        <img src="./images/product-arrow.png" alt=""/>
+    </div>
+    <div class="bottom">
+        <a href="#">登录</a>
+        <a href="#">注册</a>
+        <a href="#"><img src="./images/top.jpg" alt=""/>返回顶部</a>
+    </div>
+    <p>
+        <a href="#" style="color: red;">手机APP下载</a>
+        <a href="#">慢慢买手机版</a>
+        ——掌上比价平台
+    </p>
+    <p><a href="#"> m.manmanbuy.com  </a></p>
+</div>
+<!--+++++++++++++++++++++回到顶部++++++++++++++++-->
+<div class="m_app">
+    <img src="./images/TB2WepTeb1J.eBjSszcXXbFzVXa_!!379516416.png" alt=""/>
+    <a href="#" class="toTop">
+        <img src="./images/top.jpg" alt=""/>
+    </a>
+</div>
+</body>
+<script src="./js/ajax.js"></script>
+
+</html>
+
+
+

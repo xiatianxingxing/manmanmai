@@ -1,0 +1,77 @@
+html {
+  font-size: 32px;
+}
+/*header+++++++++++++++++++++++++*/
+.header {
+  width: 100%;
+  background-color: #ff2f4d;
+  padding: 12px;
+  height: 1.5625rem;
+  text-align: center;
+  position: relative;
+}
+.header .logo {
+  color: #fff;
+  font-size: 0.9375rem;
+}
+.header h1 {
+  color: #fff;
+  font-size: 0.625rem;
+}
+.header .add {
+  position: absolute;
+  top: 0.1875rem;
+  right: 0.1875rem;
+}
+.header .add img {
+  width: 1.1875rem;
+  height: 1.1875rem;
+}
+/*�������+++++++++++++++++++++++++++++++++++*/
+.friend {
+  padding: 0.3125rem;
+}
+.friend a {
+  border: 1px solid #eee;
+  display: inline-block;
+  width: 31%;
+  margin: 0.0625rem;
+  box-sizing: border-box;
+  height: 2.34375rem;
+  text-align: center;
+}
+.friend a img {
+  display: inline-block;
+  width: 1.5625rem;
+  height: 1.5625rem;
+}
+/*�ײ�++++++++++++++++++++++++++++++++++++*/
+.footer {
+  background-color: #f2f2f2;
+  text-align: center;
+}
+.footer a {
+  margin: 10px 0;
+}
+.footer .bottom a {
+  overflow: hidden;
+  float: left;
+  display: block;
+  box-sizing: border-box;
+  border: 1px solid #c4c4c4;
+  text-align: center;
+  line-height: 1.0625rem;
+  border-left: 0;
+  font-size: 0.4375rem;
+  height: 1.0625rem;
+  width: 30%;
+}
+.footer .bottom a:nth-of-type(3) {
+  width: 40%;
+  border-right: 0;
+}
+.footer .bottom a img {
+  width: 0.46875rem;
+  height: 0.46875rem;
+  margin-top: -2px;
+}

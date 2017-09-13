@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <script src="./lib/jquery/jquery.js"></script>
+    <script src="./lib/bootstrap/js/bootstrap.js"></script>
+    <script src="./js/template.js"></script>
+    <link rel="stylesheet" href="./css/bese.css"/>
+    <link rel="stylesheet" href="./css/conpon.css"/>
+    <title>国内折扣</title>
+</head>
+<body>
+<!--+++++++++++++++++++++头部+++++++++++++++++++-->
+<div class="header clearfix">
+    <a href="index.html" class="logo fl">
+        <
+    </a>
+    <h1>优惠券</h1>
+    <a href="#" class="add fr">
+        <img src="./images/header_app.png" alt=""/>
+    </a>
+</div>
+<!--++++++++++++++++++++合作伙伴+++++++++++++++++++++-->
+<div class="friend">
+    <script type="text/html" id="temp">
+        {{each result as value}}
+            <a href="youhuiquan.html?couponId={{value.couponId}}">
+                <img src="{{#value.couponImg}}" alt=""/>
+                <p>{{value.couponTitle}}</p>
+            </a>
+        {{/each}}
+    </script>
+</div>
+<!--++++++++++++++++++++底部++++++++++++++++++++++-->
+<div class="footer">
+
+    <div class="bottom">
+        <a href="#">登录</a>
+        <a href="#">注册</a>
+        <a href="#"><img src="./images/top.jpg" alt=""/>返回顶部</a>
+    </div>
+    <p>
+        <a href="#" style="color: red;">手机APP下载</a>
+        <a href="#">慢慢买手机版</a>
+        ——掌上比价平台
+    </p>
+    <p><a href="#"> m.manmanbuy.com  </a></p>
+</div>
+</body>
+<script src="./js/coupon.js"></script>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <script src="./lib/jquery/jquery.js"></script>
+    <script src="./lib/bootstrap/js/bootstrap.js"></script>
+    <script src="./js/template.js"></script>
+    <link rel="stylesheet" href="./css/bese.css"/>
+    <link rel="stylesheet" href="./css/moneyctrl.css"/>
+    <title>省钱控</title>
+</head>
+<body>
+<!--+++++++++++++++++++++头部+++++++++++++++++++-->
+<div class="header">
+    <a href="index.html" class="logo fl">
+       <
+    </a>
+    <h1>省钱控-最新优惠</h1>
+    <a href="#" class="add fr">
+        <img src="./images/header_app.png" alt=""/>
+    </a>
+</div>
+<!--+++++++++++++++++++++产品++++++++++++++++++-->
+<div class="product">
+    <div class="show clearfix">
+        <ul id="product_uu">
+            <script type="text/html" id="temp">
+                {{each result as value}}
+                <li class="clearfix" id="{{value.productId}}">
+                    {{#value["productImgSm"]}}
+                    <div class="li_r">
+                        <div><a href="recommend.html?productId={{value.productId}}">{{value.productName}}</a> <span class="sp">{{value.productPinkage}}</span></div>
+                        <div class="xiao">
+                            <span class="xiao_l">{{value.productFrom}}|{{value.productTime}}</span>
+                            <span class="xiao_r"><img src="./images/comment.svg" alt="" class="im"/><p>{{value.productComCount}}</p></span>
+                        </div>
+                    </div>
+                </li>
+                {{/each}}
+            </script>
+        </ul>
+    </div>
+</div>
+<!--+++++++++++++++++++++++++++botton上下页+++++++++++++++-->
+<div class="page">
+    <input type="button" value="上一页" id="btnt"/>
+    <select name="" id="select">
+        <script type="text/html" id="tep">
+            {{each list as value1}}
+                <option value="{{value1}}" >{{value1}}</option>
+            {{/each}}
+        </script>
+    </select>
+    <input type="button" value="下一页" id="btnx"/>
+</div>
+<!--++++++++++++++++++++底部++++++++++++++++++++++-->
+<div class="footer">
+
+    <div class="bottom">
+        <a href="#">登录</a>
+        <a href="#">注册</a>
+        <a href="#"><img src="./images/top.jpg" alt=""/>返回顶部</a>
+    </div>
+    <p>
+        <a href="#" style="color: red;">手机APP下载</a>
+        <a href="#">慢慢买手机版</a>
+        ——掌上比价平台
+    </p>
+    <p><a href="#"> m.manmanbuy.com  </a></p>
+</div>
+<!--+++++++++++++++++++++回到顶部++++++++++++++++-->
+<div class="m_app">
+    <img src="./images/TB2WepTeb1J.eBjSszcXXbFzVXa_!!379516416.png" alt=""/>
+    <a href="#" class="toTop">
+        <img src="./images/top.jpg" alt=""/>
+    </a>
+</div>
+</body>
+<script src="./js/money.js"></script>
+</html>

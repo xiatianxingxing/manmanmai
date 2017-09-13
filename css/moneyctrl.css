@@ -1,0 +1,145 @@
+html {
+  font-size: 32px;
+}
+body {
+  background-color: #f2f2f2;
+}
+/*header+++++++++++++++++++++++++*/
+.header {
+  width: 100%;
+  height: 1.5625rem;
+  background-color: #ff841d;
+  padding: 12px;
+  text-align: center;
+}
+.header .logo {
+  color: #fff;
+  font-size: 0.9375rem;
+}
+.header h1 {
+  color: #fff;
+  font-size: 0.625rem;
+}
+.header .add {
+  position: relative;
+  top: -20px;
+  right: 0px;
+}
+.header .add img {
+  width: 1.0625rem;
+  height: 1.0625rem;
+}
+/*��Ʒչʾ++++++++++++++++++++++++*/
+.product .show ul li {
+  margin: 20px 0px;
+}
+.product .show ul li img {
+  width: 3.125rem;
+  height: 3.125rem;
+  float: left;
+  margin-right: 0.3125rem;
+}
+.product .show ul li .li_r {
+  width: 100%;
+  padding-left: 3.4375rem;
+  font-size: 0.5rem;
+  padding: 5px;
+}
+.product .show ul li .li_r .sp {
+  color: #ff841d;
+}
+.product .show ul li .li_r .xiao {
+  font-size: 0.375rem;
+  margin-top: 0.625rem;
+}
+.product .show ul li .li_r .xiao .xiao_l {
+  float: left;
+}
+.product .show ul li .li_r .xiao .xiao_r {
+  float: right;
+  padding-right: 0.3125rem;
+}
+.product .show ul li .li_r .xiao .xiao_r p {
+  float: right;
+}
+.product .show ul li .li_r .xiao .xiao_r .im {
+  margin: 0.09375rem;
+  width: 0.46875rem;
+  height: 0.46875rem;
+}
+/*����ҳ+++++++++++++++++++++++++*/
+.page {
+  width: 100%;
+  background-color: #f2f2f2;
+  padding: 0.625rem;
+  display: flex;
+}
+.page select {
+  flex: 3;
+  height: 1.0625rem;
+  margin: 0 0.15625rem;
+}
+.page input {
+  flex: 1;
+  height: 1.03125rem;
+  background-color: #E2E2E2;
+  outline: none;
+  border: 1px solid #747474;
+  text-align: center;
+  line-height: 1.03125rem;
+  border-radius: 0.3125rem;
+}
+.page input:nth-of-type(1) {
+  float: left;
+}
+.page input:nth-of-type(2) {
+  float: right;
+}
+/*�ײ�++++++++++++++++++++++++++++++++++++*/
+.footer {
+  background-color: #f2f2f2;
+  text-align: center;
+  height: 0.03125rem;
+}
+.footer a {
+  margin: 10px 0;
+}
+.footer .bottom a {
+  overflow: hidden;
+  float: left;
+  display: block;
+  box-sizing: border-box;
+  border: 1px solid #c4c4c4;
+  text-align: center;
+  line-height: 1.0625rem;
+  border-left: 0;
+  font-size: 0.4375rem;
+  height: 1.0625rem;
+  width: 30%;
+}
+.footer .bottom a:nth-of-type(3) {
+  width: 40%;
+  border-right: 0;
+}
+.footer .bottom a img {
+  width: 0.46875rem;
+  height: 0.46875rem;
+  margin-top: -2px;
+}
+/*+++++++++++++++++++�ص�����+++++++++++*/
+.m_app {
+  position: fixed;
+  right: 5px;
+  bottom: 50px;
+  width: 1.875rem;
+}
+.m_app img {
+  height: 2.09375rem;
+}
+.m_app .toTop {
+  padding-left: 13px;
+}
+.m_app .toTop img {
+  width: 0.9375rem;
+  height: 0.9375rem;
+}

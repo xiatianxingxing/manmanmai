@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <script src="./lib/jquery/jquery.js"></script>
+    <script src="./lib/bootstrap/js/bootstrap.js"></script>
+    <script src="./js/template.js"></script>
+    <link rel="stylesheet" href="./css/bese.css"/>
+    <link rel="stylesheet" href="./css/brand.css"/>
+    <title>省钱控</title>
+</head>
+<body>
+<!--+++++++++++++++++++++头部+++++++++++++++++++-->
+<div class="header">
+    <a href="#" class="logo fl">
+        <img src="./images/header_logo.png" alt=""/>
+    </a>
+    <a href="#" class="add fr">
+        <img src="./images/header_app.png" alt=""/>
+    </a>
+</div>
+<!--+++++++++++++++++++++++搜索栏+++++++++++++++++++++-->
+<div class="search">
+    <input type="text" class="sec1 fl" value="请输入你想要的商品"/>
+    <input type="button" value="搜素" class="sec2 fl"/>
+</div>
+<div class="call">
+    <div><a href="index.html">首页 》 </a><a href="#">就是本页不要点了</a></div>
+</div>
+<!--r+++++++++++++++热门品牌排行++++++++++++++-->
+<div class="brand">
+    <div class="sort">
+        热门品牌排行
+    </div>
+    <div class="product">
+        <ul class="uu">
+            <script type="text/html" id="temp">
+                {{each result as value}}
+                    <li><a href="haiyoushui.html?brandTitleId={{value.brandTitleId}}&brandTitle={{value.brandTitle}}" id="{{value.brandTitleId}}">{{value.brandTitle}}<i> > </i></a></li>
+                {{/each}}
+            </script>
+        </ul>
+    </div>
+</div>
+<!--++++++++++++++++++++底部++++++++++++++++++++++-->
+<div class="footer">
+
+    <div class="bottom">
+        <a href="#">登录</a>
+        <a href="#">注册</a>
+        <a href="#"><img src="./images/top.jpg" alt=""/>返回顶部</a>
+    </div>
+    <p>
+        <a href="#" style="color: red;">手机APP下载</a>
+        <a href="#">慢慢买手机版</a>
+        ——掌上比价平台
+    </p>
+    <p><a href="#"> m.manmanbuy.com  </a></p>
+</div>
+</body>
+<script src="./js/brand.js"></script>
+</html>

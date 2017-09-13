@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <script src="./lib/jquery/jquery.js"></script>
+    <script src="./lib/bootstrap/js/bootstrap.js"></script>
+    <script src="./js/template.js"></script>
+    <link rel="stylesheet" href="./css/bese.css"/>
+    <link rel="stylesheet" href="./css/youhuiquan.css"/>
+    <title>国内折扣</title>
+</head>
+<body>
+<!--+++++++++++++++++++++头部+++++++++++++++++++-->
+<div class="header clearfix">
+    <a href="index.html" class="logo fl">
+        <
+    </a>
+    <h1>优惠券</h1>
+    <a href="#" class="add fr">
+        <img src="./images/header_app.png" alt=""/>
+    </a>
+</div>
+<!--++++++++++++++++ +++购买商品++++++++++++++++++++++++-->
+<div class="shopping clearfix">
+    <ul class="uu_shop">
+        <script type="text/html" id="temp">
+            {{each result as value}}
+
+            <li id="{{value.couponProductId}}">
+                <a href="javascript:;">
+                    <div class="temp">
+                        {{#value.couponProductImg}}
+                    <div class="centext">
+                        <div class="arrow">
+                            <img src="./images/arrow-right.png" alt=""/>
+                        </div>
+                        <h3 id="{{value.couponId}}">{{value.couponProductName}}</h3>
+                        <h4>{{value.couponProductPrice}}</h4>
+                        <p>{{value.couponProductTime}}</p>
+                    </div>
+                    </div>
+                </a>
+            </li>
+            {{/each}}
+        </script>
+    </ul>
+
+</div>
+
+<div class="ass">
+    <ul class="uu_fixed">
+        <script type="text/html" id="temp2">
+            {{each result as val}}
+            <li>{{#val.couponProductImg}}</li>
+            {{/each}}
+        </script>
+    </ul>
+</div>
+<!--++++++++++++++++++++底部++++++++++++++++++++++-->
+<div class="footer clearfix">
+
+    <div class="bottom clearfix">
+        <a href="#">登录</a>
+        <a href="#">注册</a>
+        <a href="#"><img src="./images/top.jpg" alt=""/>返回顶部</a>
+    </div>
+    <p>
+        <a href="#" style="color: red;">手机APP下载</a>
+        <a href="#">慢慢买手机版</a>
+        ——掌上比价平台
+    </p>
+    <p><a href="index.html"> m.manmanbuy.com  </a></p>
+</div>
+<script src="./js/youhuiquan.js"></script>
+</body>
+
+</html>

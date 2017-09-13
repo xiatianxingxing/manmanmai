@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <script src="./lib/jquery/jquery.js"></script>
+    <script src="./lib/bootstrap/js/bootstrap.js"></script>
+    <script src="./js/template.js"></script>
+    <link rel="stylesheet" href="./css/bese.css"/>
+    <link rel="stylesheet" href="./css/haiyoushui.css"/>
+    <title>省钱控</title>
+</head>
+<body>
+<!--+++++++++++++++++++++头部+++++++++++++++++++-->
+<div class="header">
+    <a href="#" class="logo fl">
+        <img src="./images/header_logo.png" alt=""/>
+    </a>
+    <a href="#" class="add fr">
+        <img src="./images/header_app.png" alt=""/>
+    </a>
+</div>
+<!--+++++++++++++++++++++++搜索栏+++++++++++++++++++++-->
+<div class="search">
+    <input type="text" class="sec1 fl" value="请输入你想要的商品"/>
+    <input type="button" value="搜素" class="sec2 fl"/>
+</div>
+<div class="call">
+    <div><a href="index.html">首页 》 </a><a href="#">就是本页不要点了</a></div>
+</div>
+<!--+++++++++++++++++++++牌子++++++++++++++++++++++++-->
+<div class="brand">
+    <h3 class="good"><span class="aaa"></span>那个好？</h3>
+    <ul class="good_uu">
+        <script type="text/html" id="temp1">
+            {{each result as value}}
+                <li>
+                    <a href="javascript:;" id="{{value.brandId}}">
+                        <span id="a{{value.brandId-value.brandTitleId*10+1}}">{{value.brandId-value.brandTitleId*10+1}}</span>
+                        <h4>{{value.brandName}}</h4>
+                        <p>{{value.brandInfo}}</p>
+                    </a>
+                </li>
+            {{/each}}
+        </script>
+    </ul>
+    <h3 class="good"><span class="aaa"></span>产量排行</h3>
+    <ul class="good_uu2">
+        <script type="text/html" id="temp2">
+            {{each result as value1}}
+                <li>
+                    <a href="javascript:;" id="{{value1.categoryId}}">
+                        {{#value1.productImg}}
+                        <p>{{value1.productName}}</p>
+                        <h4>{{value1.productPrice}} <span>★★★★★</span> </h4>
+                        <span>{{value1.productQuote}}</span>
+                        <span>{{value1.productCom}}</span>
+                    </a>
+                </li>
+            {{/each}}
+        </script>
+    </ul>
+    <h3 class="good"><span class="aaa"></span>用户评论</h3>
+    <ul class="good_uu3">
+        <script type="text/html" id="temp3">
+            {{each result as value3}}
+                <li>
+                    <div class="libt">
+                        <div class="lia clearfix">
+                            <span>{{value3.comName}}</span>
+                            <span>★★★★★</span>
+                            <i>{{value3.comTime}}</i>
+                        </div>
+                        <div>{{value3.comContent}}</div>
+                    </div>
+                </li>
+            {{/each}}
+        </script>
+    </ul>
+</div>
+<!--++++++++++++++++++++底部++++++++++++++++++++++-->
+<div class="footer">
+
+    <div class="bottom">
+        <a href="#">登录</a>
+        <a href="#">注册</a>
+        <a href="#"><img src="./images/top.jpg" alt=""/>返回顶部</a>
+    </div>
+    <p>
+        <a href="#" style="color: red;">手机APP下载</a>
+        <a href="#">慢慢买手机版</a>
+        ——掌上比价平台
+    </p>
+    <p><a href="#"> m.manmanbuy.com  </a></p>
+</div>
+<!--++++++++++++++++++广告+++++++++++++++++++-->
+<div class="app">
+    <div class="x fl"></div>
+    <div class="fl"><img src="./images/logo.png" alt=""/></div>
+    <div class="txt fl">
+        <p>慢慢买</p>
+        <span>全网比价，查历史网</span>
+    </div>
+    <input type="button" value="立即打开" class="btn fl"/>
+</div>
+</body>
+<script src="./js/haiyoushui.js"></script>
+</html>

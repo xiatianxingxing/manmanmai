@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <script src="./lib/jquery/jquery.js"></script>
+    <script src="./lib/bootstrap/js/bootstrap.js"></script>
+    <script src="./js/template.js"></script>
+    <link rel="stylesheet" href="./css/bese.css"/>
+    <link rel="stylesheet" href="./css/productid.css"/>
+    <title>国内折扣</title>
+</head>
+<body>
+<!--+++++++++++++++++++++头部+++++++++++++++++++-->
+<div class="header">
+    <a href="inlanddiscount.html" class="logo fl">
+        <
+    </a>
+    <h1>国内折扣</h1>
+    <a href="#" class="add fr">
+        <img src="./images/header_app.png" alt=""/>
+    </a>
+</div>
+<!--+++++++++++++++++++内容content+++++++++++++++-->
+<div class="content clearfix">
+    <div class="content_txt">
+        <script type="text/html" id="temp">
+            {{each result as value}}
+            <h2>{{value.productName}}</h2>
+            <p class="val">{{value.productPinkage}}</p>
+            <p class="nav"><span>{{value.productFrom}}</span><span>{{value.productTime}}</span><span>{{value.productTips}}</span></p>
+            <div class="jieshao">
+                <img src="./images/20170417214649119.jpg" alt=""/>
+                {{value.productInfo}}
+            </div>
+            <p class="pp">{{value.productInfo2}}</p>
+            {{#value.productImg}}
+            <div class="goumai"><a href="javascript:;">前往购买</a></div>
+            <img src="./images/mmbweixin2.png" alt=""/>
+            {{#value.productCity}}
+            {{#value.productComment}}
+            {{/each}}
+        </script>
+    </div>
+
+</div>
+<!--++++++++++++++++++++底部++++++++++++++++++++++-->
+<div class="footer">
+
+    <div class="bottom">
+        <a href="#">登录</a>
+        <a href="#">注册</a>
+        <a href="#"><img src="./images/top.jpg" alt=""/>返回顶部</a>
+    </div>
+    <p>
+        <a href="#" style="color: red;">手机APP下载</a>
+        <a href="#">慢慢买手机版</a>
+        ——掌上比价平台
+    </p>
+    <p><a href="#"> m.manmanbuy.com  </a></p>
+</div>
+</body>
+<script src="./js/productid.js"></script>
+</html>

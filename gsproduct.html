@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <script src="./lib/jquery/jquery.js"></script>
+    <script src="./lib/bootstrap/js/bootstrap.js"></script>
+    <script src="./js/template.js"></script>
+    <link rel="stylesheet" href="./css/bese.css"/>
+    <link rel="stylesheet" href="./css/gsproduct.css"/>
+    <title>凑单品</title>
+</head>
+<body>
+<!--+++++++++++++++++++++头部+++++++++++++++++++-->
+<div class="header">
+    <a href="index.html" class="logo fl">
+        <
+    </a>
+    <h1>凑单品</h1>
+</div>
+<!--+++++++++++++++++++nav++++++++++++++++++-->
+<div class="nav clearfix">
+    <ul class="nav_uu clearfix">
+        <li><a href="javascript:;" id="1" class="a1"><span>京东</span> <i><img src="./images/arrowdown.png" alt=""/></i></a></li>
+        <li><a href="javascript:;" id="2" class="a2"><span>华北</span> <i><img src="./images/arrowdown.png" alt=""/></i></a></li>
+        <li><a href="javascript:;" id="3" class="a3"><span>全部价格</span> <i><img src="./images/arrowdown.png" alt=""/></i></a></li>
+    </ul>
+    <div class="search"><img src="./images/search.png" alt=""/></div>
+    <div class="sea">
+        <img src="./images/searchx.png" alt=""/>
+        <input type="text" value="请输入想搜索的内容"/>
+        <input type="button" value="搜索"/>
+    </div>
+    <div class="select">
+        <ul class="sele_uu" style="display: none">
+            <script type="text/html" id="temp1">
+                {{each result as value}}
+                    <li id="{{value.shopId}}"><a href="javascript:;" >{{value.shopName}}</a><em><img src="./images/对勾.png" alt=""/></em></li>
+                {{/each}}
+            </script>
+        </ul>
+        <ul class="sele_uu1"  style="display: none">
+            <script type="text/html" id="temp2">
+                {{each result as value1}}
+                <li id="{{value1.areaId}}"><a href="javascript:;">{{value1.areaName}}</a><em><img src="./images/对勾.png" alt=""/></em></li>
+                {{/each}}
+            </script>
+        </ul>
+    </div>
+</div>
+<!--+++++++++++++++++++++++++product++++++++++++++++++++++++++++++++-->
+<div class="product">
+    <ul class="uuuu">
+        <script type="text/html" id="temp3">
+            {{each result as val}}
+                <li>
+                    <a href="javascript:;" id="{{val.productId}}">
+                        <img src="{{val.productImg}}" alt=""/>
+                        <p>{{val.productName}}</p>
+                        <strong>{{val.productPrice}}</strong>
+                    </a>
+                </li>
+            {{/each}}
+        </script>
+    </ul>
+</div>
+
+</body>
+<script src="./js/gsproduct.js"></script>
+</html>
